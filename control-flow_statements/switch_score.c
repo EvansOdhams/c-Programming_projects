@@ -3,36 +3,21 @@
 /**
  * main - check code
  *
- * Return: Always 0.
+ * Return:Always 0.
  */
 int main(void)
 {
-int score;
-char grade;
+	int score;
 
-printf("Enter Score: ");
-scanf("%d", &score);
-
-if (score >= 90 && score <= 100)
-{
-grade = 'A';
-}
-else if (score >= 80 && score <= 89)
-{
-grade = 'B';
-}
-else if (score >= 70 && score <= 79)
-{
-grade = 'C';
-}
-else if (score >= 60 && score <= 69)
-{
-grade = 'D';
-}
-else
-{
-grade = 'F';
-}
-printf("Grade: %c\n", grade);
-return (0);
+	printf("Enter your score: ");
+	scanf("%d", &score);
+	switch (score)
+	{
+		case = 90 ... 100:
+			printf("A");
+			break;
+		default:
+			printf("E");
+			break;
+	}
 }
